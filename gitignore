@@ -1,0 +1,11 @@
+.gitignore
+*.o
+*.a
+*.out
+main.c
+test.sh
+test00/
+test01/
+pft/
+pft_exam/
+printf-tester/
