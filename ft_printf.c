@@ -6,7 +6,7 @@
 /*   By: snemoto <snemoto@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/06 08:56:20 by snemoto           #+#    #+#             */
-/*   Updated: 2023/02/24 23:24:39 by snemoto          ###   ########.fr       */
+/*   Updated: 2023/08/07 08:32:11 by snemoto          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static const char	*read_args(t_args *args, const char *itr)
 			itr += ft_get_digits_base((args->prec = ft_atoi(itr)), 10);
 		if (ft_strchr(CONV, *itr) || *itr == '%')
 			args->spec = *itr++;
-		if (args->spec != 0 || itr++ == '\0')
+		if (args->spec != 0 || *itr++ == '\0')
 			break ;
 	}
 	return (itr);
